@@ -1,0 +1,30 @@
+.container {
+    border: 1px solid red;
+    padding: 20px;
+    margin: 20px;
+}
+
+.container > .row {
+    border: 1px solid blue;
+    padding: 20px;
+    margin: 20px;
+}
+
+.container > .row:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.container > .row > [class^="col-"] {
+    background-color: aqua;
+    height: 100px;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+.red {
+    background-color: red !important;
+}
